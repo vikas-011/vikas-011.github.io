@@ -174,5 +174,3 @@ sr.reveal(`.home__handle`, {delay: 900});
 sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
 
 // ==================================
-
-document.getElementById('bunt').addEventListener("click",SendEmail);
