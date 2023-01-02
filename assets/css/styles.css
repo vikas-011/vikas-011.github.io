@@ -15,7 +15,7 @@
   */
   --first-hue: 200;
   --sat: 63%;
-  --lig: 90%;
+  --lig: 95%;
   --second-hue: 219;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
