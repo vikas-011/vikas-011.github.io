@@ -17,21 +17,23 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
+    <link rel="stylesheet" href="/assets/gt/01.css">
+ <link rel="stylesheet" href="/assets/gt/02.css">
+
     <title>Portfolio - Vikas Sanodiya</title>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-   
+
     <script src="../Portfolio/assets/js/script.js" type="text/javascript"></script>
-  
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  
-  <script type="text/javascript">
-    
-    (function(){
-          emailjs.init('fro2Rn9m8_JtO07Q3');
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+
+        (function () {
+            emailjs.init('fro2Rn9m8_JtO07Q3');
         })();
-  </script>
+    </script>
 </head>
 
 <body>
@@ -88,15 +90,15 @@
 
                     <div class="home__buttons">
 
-                       
+
                         <!-- <a class="button button-ghost" download="" href="./Resume Vikas Sanodiya.pdf">Dowenload CV</a> -->
                         <a class="button" href="#about">About me</a>
-                    
+
                         <!-- Add resume -->
 
                         <a href="./Resume Vikas Sanodiya.pdf" class="button button--ghost">
-                                Download Resume
-                            </a>
+                            Download Resume
+                        </a>
 
                         <!-- about -->
 
@@ -163,7 +165,7 @@
                     <!-- <a href="./Resume Vikas Sanodiya.pdf" class="button button--ghost">
                         Download Resume
                     </a> -->
-                    
+
                 </div>
             </div>
         </section>
@@ -674,20 +676,40 @@
                     <a href="https://github.com/vikas-011" target="_blank" class="work__button">
                         Go to Code <i class='bx bx-arrow-from-left work__icon'></i>
                     </a>
+
+                </div>
+
+                <div style="display:flex; margin-top: 30px; height: 63%; width: 95%;">
+                    <img src="https://github-readme-stats.vercel.app/api?username=vikas-011&show_icons=true&theme=radical"
+                        alt="">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vikas-011&langs_count=8&theme=radical"
+                        alt="" style="height: 100%; width: 60%;">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=vikas-011&theme=gotham&hide_border=false&theme=radical"
+                        alt="">
+
+                </div>
                     
-                </div>
-                
-                <div style="display:flex; margin-top: 30px; height: 63%; width: 95%;" >
-                    <img src="https://github-readme-stats.vercel.app/api?username=vikas-011&show_icons=true&theme=radical" alt="">
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vikas-011&langs_count=8&theme=radical" alt="" style="height: 100%; width: 60%;">
-                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=vikas-011&theme=gotham&hide_border=false&theme=radical" alt="" >
-                
-                </div>
             </div>
-            
+
         </section>
+        <div class="about_the_section"></div>
+                    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+                    <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/> -->
+                    <div class="calendar" style=" height: 40%; width: 62%;">
+                        <!-- Loading calender -->
+                    </div>
 
-
+                    <script>
+            GitHubCalendar(".calendar", "vikas-011", { responsive: true });
+        
+            // Use a proxy
+            GitHubCalendar(".calendar", "vikas-011", {
+                proxy(username) {
+                    return fetch(`https://your-proxy.com/github?user=${username}`)
+                }
+            })
+            
+</script>
 
         <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
@@ -700,10 +722,11 @@
 
                     <div class="contact__info">
                         <div class="contact__card">
-                            <a href="mailto:vikas.tech011@gmail.com"> <i class='bx bx-mail-send contact__card-icon'  style="font-size:26px"  ></i></a>
-                            
-                            
-                           
+                            <a href="mailto:vikas.tech011@gmail.com"> <i class='bx bx-mail-send contact__card-icon'
+                                    style="font-size:26px"></i></a>
+
+
+
                             <!-- <h3 class="contact__card-title">Email</h3> -->
                             <span class="contact__card-data">vikas.tech011@gmail.com</span>
 
@@ -713,7 +736,8 @@
                         </div>
 
                         <div class="contact__card">
-                            <a href="https://wa.me/+917987882964?text=Hello" style="color:white" >  <i class='bx bxl-whatsapp contact__button-icon' style="font-size:30px"  ></i></a>
+                            <a href="https://wa.me/+917987882964?text=Hello" style="color:white"> <i
+                                    class='bx bxl-whatsapp contact__button-icon' style="font-size:30px"></i></a>
                             <span class="contact__card-data"><i class='bx bx-phone-call'></i> +91-7987882964</span>
                             <!--  Call 24px icon -->
 
@@ -728,8 +752,9 @@
                         <div class="contact__card">
                             <!-- <i class='bx bxl-linkedin contact__button-icon' style="font-size:26px"></i> -->
                             <!-- <h3 class="contact__card-title">Linkdin</h3> -->
-                           
-                            <a href="https://www.linkedin.com/in/vikassanodiya/" style="color:white"> <i class='bx bxl-linkedin contact__button-icon' style="font-size:30px"  ></i></a>
+
+                            <a href="https://www.linkedin.com/in/vikassanodiya/" style="color:white"> <i
+                                    class='bx bxl-linkedin contact__button-icon' style="font-size:30px"></i></a>
 
                             <a href="https://www.linkedin.com/in/vikassanodiya/" target="blank" class="contact__button">
                                 Message me on Linkdin <i class='bx bx-arrow-from-left contact__button-icon'></i>
@@ -738,12 +763,13 @@
                         <div class="contact__card">
                             <!-- <i class='bx bxl-linkedin contact__button-icon' style="font-size:26px"></i> -->
                             <!-- <h3 class="contact__card-title">Linkdin</h3> -->
-                           
-                            <a href="https://vikascontactlinks.netlify.app/" style="color:white"> <i class='bx bxl-instagram contact__button-icon ' style="font-size:22px"  ></i>
-                                <i class='bx bxl-youtube contact__button-icon ' style="font-size:22px"  ></i>
-                                <i class='bx bxl-facebook contact__button-icon ' style="font-size:22px"  ></i>
-                                <i class='bx bxl-gmail contact__button-icon ' style="font-size:22px"  ></i>
-                                <i class='bx bxl-snapchat contact__button-icon ' style="font-size:22px"  ></i></a>
+
+                            <a href="https://vikascontactlinks.netlify.app/" style="color:white"> <i
+                                    class='bx bxl-instagram contact__button-icon ' style="font-size:22px"></i>
+                                <i class='bx bxl-youtube contact__button-icon ' style="font-size:22px"></i>
+                                <i class='bx bxl-facebook contact__button-icon ' style="font-size:22px"></i>
+                                <i class='bx bxl-gmail contact__button-icon ' style="font-size:22px"></i>
+                                <i class='bx bxl-snapchat contact__button-icon ' style="font-size:22px"></i></a>
 
                             <a href="https://vikascontactlinks.netlify.app/" target="blank" class="contact__button">
                                 Connect me on Social-Media <i class='bx bx-arrow-from-left contact__button-icon'></i>
@@ -760,30 +786,32 @@
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Name</label>
                             <!-- <input type="text" name="full-name" id="fullName" placeholder="Full Name" required/><br/> -->
-                            <input type="text" name="full-name" id="fullName" class="contact__form-input" placeholder="Full Name" required>
+                            <input type="text" name="full-name" id="fullName" class="contact__form-input"
+                                placeholder="Full Name" required>
                         </div>
 
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Mail</label>
                             <!-- <input type="email" name="email" id="email_id" placeholder="Email" required/><br/> -->
-                            <input type="email" name="email" id="email_id" class="contact__form-input" placeholder="Email Address" required>
+                            <input type="email" name="email" id="email_id" class="contact__form-input"
+                                placeholder="Email Address" required>
                         </div>
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Contact No.</label>
                             <!-- <input type="number" id="phone_id" placeholder="Phone No." required=""> -->
-                            <input type="text"  id="phone_id" class="contact__form-input" placeholder="Mobile Number">
+                            <input type="text" id="phone_id" class="contact__form-input" placeholder="Mobile Number">
                         </div>
 
                         <div class="contact__form-div contact__form-area">
                             <label for="" class="contact__form-tag">Project</label>
                             <!-- <textarea   id="message"  rows="4" placeholder="Message" required></textarea><br/> -->
-                            <textarea id="Message" name=""  cols="30" rows="10" class="contact__form-input"
+                            <textarea id="Message" name="" cols="30" rows="10" class="contact__form-input"
                                 placeholder="Write about your project" required></textarea>
                         </div>
 
                         <!-- <button class="button">Send Message</button> -->
                         <button class="button button--ghost" onclick="SendEmail()">Send Message</button>
-                        
+
 
                     </form>
                 </div>
@@ -843,7 +871,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>
-    
+
     <script src="./assets/js/script.js"></script>
 </body>
 
