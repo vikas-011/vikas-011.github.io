@@ -33,7 +33,7 @@
   }
   
   .calendar {
-      width: 100%;
+      width: 90%;
       font-family: 'Source Sans Pro',sans-serif; 
       border: 1px solid #DDDDDD;
       border-radius: 3px;
@@ -41,7 +41,6 @@
       text-align: center;
       /* margin: 0 auto;     */
       font-size: 7px;
-      
   }
   
   .calendar-graph text.wday,
@@ -200,5 +199,5 @@
       fill: #ccc;
       font-size: 11px;
   }
-
+  
 }
