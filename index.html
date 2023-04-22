@@ -679,7 +679,7 @@
 
                 </div>
 
-                <div style="display:flex; margin-top: 30px; height: 63%; width: 95%;">
+                <!-- <div  style="display:flex; margin-top: 30px; height: 63%; width: 95%;">
                     <img src="https://github-readme-stats.vercel.app/api?username=vikas-011&show_icons=true&theme=radical"
                         alt="">
                     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vikas-011&langs_count=8&theme=radical"
@@ -687,29 +687,46 @@
                     <img src="https://github-readme-streak-stats.herokuapp.com/?user=vikas-011&theme=gotham&hide_border=false&theme=radical"
                         alt="">
 
-                </div>
+                </div> -->
                     
             </div>
 
         </section>
-        <div class="about_the_section"></div>
-                    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-                    <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/> -->
-                    <div class="calendar" style=" height: 40%; width: 62%;">
-                        <!-- Loading calender -->
-                    </div>
 
-                    <script>
-            GitHubCalendar(".calendar", "vikas-011", { responsive: true });
+        <section class="work section" id="work">
+            <span class="section__subtitle">GitHub</span>
+            <h2 class="section__title">My GitHub</h2>
+            <div>
+                <div style="display:flex; height: 24%; width: 26%; margin-left: 17.5%; text-align: center;" >
+                    <img src="https://github-readme-stats.vercel.app/api?username=vikas-011&show_icons=true&theme=radical"
+                        alt="">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vikas-011&langs_count=8&theme=radical"
+                        alt="" style="height: 40%; width: 50%;" >
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=vikas-011&theme=gotham&hide_border=false&theme=radical"
+                        alt="">
         
-            // Use a proxy
-            GitHubCalendar(".calendar", "vikas-011", {
-                proxy(username) {
-                    return fetch(`https://your-proxy.com/github?user=${username}`)
-                }
-            })
-            
-</script>
+                </div>
+                <div class="about_the_section" style="margin-top: 3%;"></div>
+                <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+                <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/> -->
+                <div class="calendar" style=" height: 40%; width: 62%;">
+                    <!-- Loading calender -->
+                </div>
+        
+                <script>
+                    GitHubCalendar(".calendar", "vikas-011", { responsive: true });
+
+                    // Use a proxy
+                    GitHubCalendar(".calendar", "vikas-011", {
+                        proxy(username) {
+                            return fetch(`https://your-proxy.com/github?user=${username}`)
+                        }
+                    })
+
+                </script>
+            </div>
+        </section>
+        
 
         <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
