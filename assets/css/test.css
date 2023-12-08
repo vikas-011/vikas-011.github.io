@@ -1,0 +1,207 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #555;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #777;
+}
+
+/* Main section styles */
+section {
+  padding: 40px 0;
+}
+
+.section__subtitle {
+  display: block;
+  color: #777;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.section__title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* About section styles */
+.about {
+  background-color: #f9f9f9;
+}
+
+/* Skills section styles */
+.skills__group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills__data {
+  flex-basis: calc(33.333% - 20px);
+  margin-bottom: 20px;
+}
+
+/* Testimonials section styles */
+.testimonial {
+  background-color: #eee;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.testimonial__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Services section styles */
+.services {
+  background-color: #f9f9f9;
+}
+
+.services__card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Work section styles */
+.work {
+  background-color: #eee;
+}
+
+.work__filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.work__item {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.work__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.work__card {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.work__img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #f9f9f9;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__content,
+.contact__form {
+  flex-basis: 48%;
+}
+
+.contact__form-div {
+  margin-bottom: 20px;
+}
+
+.contact__form-input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contact__button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact__button:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin-bottom: 10px;
+  }
+
+  .skills__data {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .contact__container {
+    flex-direction: column;
+  }
+
+  .contact__content,
+  .contact__form {
+    flex-basis: 100%;
+  }
+}
