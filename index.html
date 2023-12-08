@@ -4,32 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/test.css">
-    <title>Vikas Sanodiya - Portfolio</title>
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./assets/img/logBg (1).png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!-- ============ FONT-AWESOME============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!--=============== CSS ===============-->
+    
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/gt/01.css">
+    <link rel="stylesheet" href="/assets/gt/02.css">
+
+    <title>Portfolio - Vikas Sanodiya</title>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="../Portfolio/assets/js/script.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+
+        (function () {
+            emailjs.init('fro2Rn9m8_JtO07Q3');
+        })();
+    </script>
 </head>
 
 <body>
-    <!--=============== NAV ===============-->
-    <nav id="nav-menu">
-        <a href="#home" class="nav-link home">Home</a>
-        <a href="#about" class="nav-link about">About</a>
-        <a href="#skills" class="nav-link skills">Skills</a>
-        <a href="#work" class="nav-link projects">Projects</a>
-        <a href="#contact" class="nav-link contact">Contact</a>
-        <a href="#" class="nav-link resume" id="resume-link-1">Resume</a>
-    </nav>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Viaks Sanodiya</a>
 
-    <!--=============== HOME ===============-->
-    <main id="main">
-        <section class="home" id="home">
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#github" class="nav__link">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bxs-message-detail'></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Theme Change Button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
             <div class="home__container container grid">
-                <img src="./assets/img/vikas.jpg" alt="" class="home-img">
                 <div class="home__data">
-<<<<<<< HEAD
-                    <h1 class="home__title" id="user-detail-name">Vikas Sanodiya</h1>
-                    <h3 class="home__subtitle" id="user-detail-intro">Web Developer</h3>
-                </div>
-=======
                     <span class="home__greeting">Hello I'm</span>
                     <h1 class="home__name">Vikas Sanodiya</h1>
                     <h3 class="home__education">Full Stack Web Developer</h3>
@@ -74,16 +136,15 @@
                     <i class='bx bx-mouse home_scroll-icon'></i>
                     <span class="home__scroll-name">Scroll Down</span>
                 </a>
->>>>>>> a135265f9c8fe818ff453052c2e31e04b5dbf14d
             </div>
         </section>
 
         <!--=============== ABOUT ===============-->
         <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
             <div class="about__container container grid">
-<<<<<<< HEAD
-                <!-- Your existing about section content -->
-=======
                 <img src="./assets/img/DSC_0018.JPG" alt="" class="about__img">
 
                 <div class="about__data">
@@ -115,20 +176,139 @@
                     </a>
 
                 </div>
->>>>>>> a135265f9c8fe818ff453052c2e31e04b5dbf14d
             </div>
         </section>
 
         <!--=============== SKILLS ===============-->
         <section class="skills section" id="skills">
+            <span class="section__subtitle">Skills</span>
+            <h2 class="section__title">Web Development</h2>
+
             <div class="skills__container container grid">
-                <!-- Your existing skills section content -->
+                <!-- ---------------------frontend------------------------- -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Javascript</h3>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Figma</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------------beckend----------------- -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Beckend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">OS & Networking</h3>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Hibernate</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Spring Boot</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">No-SQL</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-<<<<<<< HEAD
-        <!--=============== PROJECTS ===============-->
-=======
         <!-- =============== TESTIMONIALS ===============-->
         <section class="testimonial section">
             <span class="section__subtitle">Tools</span>
@@ -437,19 +617,17 @@
         </section>
 
         <!--=============== WORK ===============-->
->>>>>>> a135265f9c8fe818ff453052c2e31e04b5dbf14d
         <section class="work section" id="work">
             <span class="section__subtitle">My Projects</span>
             <h2 class="section__title">Recent Works</h2>
 
             <div class="work__filters">
-                <!-- Your existing work filters -->
+                <div class="work__item active-work" data-filter="all">All</div>
+                <div class="work__item" data-filter=".web">Web</div>
+                <div class="work__item" data-filter=".design">Design</div>
             </div>
 
             <div class="work__container container grid">
-<<<<<<< HEAD
-                <!-- Your existing work cards -->
-=======
                 <div class="work__card mix all">
                     <h4 class="work__section__title">Zee5.com</h4>
                     <img src="./assets/img/zee5.com.png" alt="" class="work__img">
@@ -466,24 +644,8 @@
                 <div class="work__card mix web">
                     <h4 class="work__section__title">Expedia.com</h4>
                     <img src="./assets/img/expedia.com.png" alt="" class="work__img">
->>>>>>> a135265f9c8fe818ff453052c2e31e04b5dbf14d
 
-                <!-- Add new project cards following the provided instructions -->
-                <!-- Example:
-                <div class="work__card mix web project-card">
-                    <h4 class="work__section__title">Project Title</h4>
-                    <img src="path/to/project-image.jpg" alt="" class="work__img">
                     <h3 class="work_title"></h3>
-<<<<<<< HEAD
-                    <a href="#" class="work__button">
-                        Go to Website <i class='bx bx-arrow-from-left work__icon'></i>
-                    </a>
-                    <a href="#" class="work__button">
-                        Go to Code <i class='bx bx-arrow-from-left work__icon'></i>
-                    </a>
-                </div>
-                -->
-=======
 
                     <a href="adorable-fairy-910347.netlify.app/" target="_blank" class="work__button">
                         Go to Website <i class='bx bx-arrow-from-left work__icon'></i>
@@ -555,14 +717,114 @@
                     // or enable responsive functionality
                     GitHubCalendar(".calendar", "vikas-011", { responsive: true });            
                 </script>
->>>>>>> a135265f9c8fe818ff453052c2e31e04b5dbf14d
             </div>
         </section>
+        
 
         <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact Me</h2>
+
             <div class="contact__container container grid">
-                <!-- Your existing contact section content -->
+                <div class="contact__content">
+                    <h3 class="contact__title">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <a href="mailto:vikas.tech011@gmail.com"> <i class='bx bx-mail-send contact__card-icon'
+                                    style="font-size:26px"></i></a>
+
+
+
+                            <!-- <h3 class="contact__card-title">Email</h3> -->
+                            <span class="contact__card-data">vikas.tech011@gmail.com</span>
+
+                            <a href="mailto:vikas.tech011@gmail.com" target="blank" class="contact__button">
+                                Write me <i class='bx bx-arrow-from-left contact__button-icon' style="color: inherit;text-decoration: none;"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <a href="https://wa.me/+919301930088?text=Hello" style="color: inherit;text-decoration: none;"> <i
+                                    class='bx bxl-whatsapp contact__button-icon' style="font-size:30px"></i></a>
+                            <span class="contact__card-data"><i class='bx bx-phone-call'></i> +91-9301930088</span>
+                            <!--  Call 24px icon -->
+
+                            <!-- <i class='bx bxl-whatsapp contact__button-icon' style="font-size:26px"></i> -->
+                            <!-- <h3 class="contact__card-title">WhatsApp/Call</h3> -->
+
+                            <a href="https://wa.me/+917987882964?text=Hello" target="blank" class="contact__button">
+                                Message me on Whatsapp<i class='bx bx-arrow-from-left contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <!-- <i class='bx bxl-linkedin contact__button-icon' style="font-size:26px"></i> -->
+                            <!-- <h3 class="contact__card-title">Linkdin</h3> -->
+
+                            <a href="https://www.linkedin.com/in/vikassanodiya/" style="color: inherit;text-decoration: none;"> <i
+                                    class='bx bxl-linkedin contact__button-icon' style="font-size:30px"></i></a>
+
+                            <a href="https://www.linkedin.com/in/vikassanodiya/" target="blank" class="contact__button">
+                                Message me on Linkdin <i class='bx bx-arrow-from-left contact__button-icon'></i>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <!-- <i class='bx bxl-linkedin contact__button-icon' style="font-size:26px"></i> -->
+                            <!-- <h3 class="contact__card-title">Linkdin</h3> -->
+
+                            <a href="https://vikas-011.github.io/tree" style="color: inherit;text-decoration: none;"> <i
+                                    class='bx bxl-instagram contact__button-icon ' style="font-size:22px"></i>
+                                <i class='bx bxl-youtube contact__button-icon ' style="font-size:22px"></i>
+                                <i class='bx bxl-facebook contact__button-icon ' style="font-size:22px"></i>
+                                <i class='bx bxl-gmail contact__button-icon ' style="font-size:22px"></i>
+                                <i class='bx bxl-snapchat contact__button-icon ' style="font-size:22px"></i></a>
+
+                            <a href="https://vikas-011.github.io/tree" target="blank" class="contact__button">
+                                Connect me on Social-Media <i class='bx bx-arrow-from-left contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contact__contect">
+                    <h3 class="contact__title">Write me your project</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <!-- <input type="text" name="full-name" id="fullName" placeholder="Full Name" required/><br/> -->
+                            <input type="text" name="full-name" id="fullName" class="contact__form-input"
+                                placeholder="Full Name" required>
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <!-- <input type="email" name="email" id="email_id" placeholder="Email" required/><br/> -->
+                            <input type="email" name="email" id="email_id" class="contact__form-input"
+                                placeholder="Email Address" required>
+                        </div>
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Contact No.</label>
+                            <!-- <input type="number" id="phone_id" placeholder="Phone No." required=""> -->
+                            <input type="text" id="phone_id" class="contact__form-input" placeholder="Mobile Number">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Project</label>
+                            <!-- <textarea   id="message"  rows="4" placeholder="Message" required></textarea><br/> -->
+                            <textarea id="Message" name="" cols="30" rows="10" class="contact__form-input"
+                                placeholder="Write about your project" required></textarea>
+                        </div>
+
+                        <!-- <button class="button">Send Message</button> -->
+                        <button class="button button--ghost" onclick="SendEmail()">Send Message</button>
+
+
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -571,36 +833,57 @@
     <footer class="footer">
         <div class="footer__container container">
             <h1 class="footer__title">Vikas Sanodiya</h1>
-            <!-- Your existing footer content -->
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="footer__link">Contacts</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://github.com/vikas-011" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-github'></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/vikassanodiya/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+
+                <a href="https://twitter.com/Vikassa54495450" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy"><i class='bx bx-copyright'></i> Vikas Sanodiya, All rights reserved</span>
         </div>
     </footer>
 
-    <!--=============== SCRIPTS ===============-->
-    <!-- Include your existing script tags -->
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
 
-    <!-- Add new script tags for GitHub calendar and resume buttons -->
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <script>
-        GitHubCalendar(".calendar", "vikas-011");
-        GitHubCalendar(".react-activity-calendar", "vikas-011"); // Use the appropriate class for GitHub calendar
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
-        // Resume buttons
-        document.getElementById('resume-link-1').addEventListener('click', function () {
-            window.open('path/to/resume.pdf', '_blank');
-        });
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="./assets/js/mixitup.min.js"></script>
 
-<<<<<<< HEAD
-        document.getElementById('resume-link-2').addEventListener('click', function () {
-            window.open('path/to/resume.pdf', '_blank');
-        });
-    </script>
-=======
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>
 
     <script src="./assets/js/script.js"></script>
     
->>>>>>> a135265f9c8fe818ff453052c2e31e04b5dbf14d
 </body>
 
 </html>
