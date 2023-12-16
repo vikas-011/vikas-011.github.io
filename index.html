@@ -42,7 +42,23 @@
     #gtempsize {
         color: rgb(25, 44, 38);
     }
+    #gtempsize a {
+        text-decoration: none;
+        font-size: small;
+        padding: 5px 10px;
+        border: 2px solid #34a897;
+        border-radius: 11px;
+        color: #27b9a3;
+        margin-right: 35px;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, text-decoration 0.3s;
+    }
 
+    #gtempsize a:hover {
+        background: linear-gradient(45deg, #e0ebf1, #c5e6fa, rgb(171, 195, 238));
+        color: #022c36;
+        border-color: rgb(34, 143, 151);
+        text-decoration: underline;
+    }
     @media (max-width: 600px) {
         #gtempsize {
             display: none;
@@ -68,12 +84,12 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Viaks Sanodiya</a>
-            <div id="gtempsize" style="color: rgb(25, 44, 38);"> <!-- Common style for all links -->
-                <a href="#home" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color: rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;">Home</a>
-                <a href="#about" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color:rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;">About Me</a>
-                <a href="#skills" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color: rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;">Skills</a>
-                <a href="#work" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color:rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;">Projects</a>
-                <a href="./Vikas_Sanodiya_Resume.pdf" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color:rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;" target="_blank">Resume</a>
+            <div id="gtempsize">
+                <a href="#home" class="nav__logo" id="tempsize">Home</a>
+                <a href="#about" class="nav__logo" id="tempsize">About Me</a>
+                <a href="#skills" class="nav__logo" id="tempsize">Skills</a>
+                <a href="#work" class="nav__logo" id="tempsize">Projects</a>
+                <a href="./Vikas_Sanodiya_Resume.pdf" class="nav__logo" id="tempsize" target="_blank">Resume</a>
             </div>
             
             
