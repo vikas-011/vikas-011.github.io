@@ -37,6 +37,30 @@
             emailjs.init('fro2Rn9m8_JtO07Q3');
         })();
     </script>
+    <style>
+        
+    #gtempsize {
+        color: rgb(25, 44, 38);
+    }
+
+    @media (max-width: 600px) {
+        #gtempsize {
+            display: none;
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        #gtempsize {
+            font-size: 14px; /* Adjust font size for medium-sized screens */
+        }
+    }
+
+    @media (min-width: 801px) and (max-width: 1200px) {
+        #gtempsize {
+            font-size: 16px; /* Adjust font size for larger screens */
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -44,7 +68,16 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Viaks Sanodiya</a>
-
+            <div id="gtempsize" style="color: rgb(25, 44, 38);"> <!-- Common style for all links -->
+                <a href="#home" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color: rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;">Home</a>
+                <a href="#about" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color:rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;">About Me</a>
+                <a href="#skills" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color: rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;">Skills</a>
+                <a href="#work" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color:rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;">Projects</a>
+                <a href="./Vikas_Sanodiya_Resume.pdf" class="nav__logo" id="tempsize" style="text-decoration: none; margin-right: 40px; color:rgb(34, 143, 151); transition: color 0.3s, text-decoration 0.3s;" target="_blank">Resume</a>
+            </div>
+            
+            
+            
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -78,11 +111,14 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="./Resume Vikas Sanodiya.pdf" class="nav__link">
-                            <!-- <i class="material-icons">&#xe2c4;</i> -->
+                        <a href="./Vikas_Sanodiya_Resume.pdf" class="nav__link" target="_blank">
                             <i style="font-size:20px" class="fa">&#xf0ed;</i>
                         </a>
-                        <!-- <a href="/Resume Vikas Sanodiya.pdf" class="nav__link">
+                        
+                        
+                        
+                        
+                        <!-- <a href="/Vikas_Sanodiya_Resume.pdf" class="nav__link">
                             <i class='bx bx-briefcase-alt'></i>
                         </a> -->
                     </li>
@@ -108,12 +144,12 @@
                     <div class="home__buttons">
 
 
-                        <!-- <a class="button button-ghost" download="" href="./Resume Vikas Sanodiya.pdf">Dowenload CV</a> -->
+                        <!-- <a class="button button-ghost" download="" href="./Vikas_Sanodiya_Resume.pdf">Dowenload CV</a> -->
                         <a class="button" href="#about">About me</a>
 
                         <!-- Add resume -->
 
-                        <a href="./Resume Vikas Sanodiya.pdf" download="Resume Vikas Sanodiya" class="button button--ghost">
+                        <a href="./Vikas_Sanodiya_Resume.pdf" class="button button--ghost "target="_blank">
                             Download Resume
                         </a>
 
@@ -179,7 +215,7 @@
 
                     <a href="#contact" class="button">Contact Me</a>
                     
-                    <a href="./Resume Vikas Sanodiya.pdf" download="Resume Vikas Sanodiya" class="button button--ghost">
+                    <a href="./Vikas_Sanodiya_Resume.pdf" class="button button--ghost" target="_blank">
                         <!-- <i class="material-icons">&#xe2c4;</i> -->
                         <i style="font-size:24px" class="fa">&#xf0ed;</i>
                     </a>
@@ -398,7 +434,7 @@
 
             <div class="services__container container grid">
                 <div class="services__card">
-                    <h2 class="services__title">CLONE Zee5.com</h3>
+                    <h2 class="services__title">CLONE Zee5.com Clone</h3>
 
                         <span class="services__button">
                             See more <i class='bx bx-arrow-from-left services__icons'></i>
@@ -452,7 +488,7 @@
                 </div>
 
                 <div class="services__card">
-                    <h3 class="services__title">CLONE Expedia.com</h3>
+                    <h3 class="services__title">Expedia.com Clone </h3>
 
                     <span class="services__button">
                         See more <i class='bx bx-arrow-from-left services__icons'></i>
@@ -462,7 +498,7 @@
                         <div class="services__model-content">
                             <i class='bx bx-x-circle services__model-close'></i>
 
-                            <h3 class="services__model-title">Expedia.Com</h3>
+                            <h3 class="services__model-title">Expedia.com Clone</h3>
                             <p class="services__model-description">
                                 Creating a clone of Expedia.com for hotel bookings <br>
                                 Here's some features & services.
@@ -638,7 +674,7 @@
 
             <div class="work__container container grid">
                 <div class="work__card mix all">
-                    <h4 class="work__section__title">Zee5.com</h4>
+                    <h4 class="work__section__title">Zee5.com Clone</h4>
                     <img src="./assets/img/zee5.com.png" alt="" class="work__img">
 
                     <p class="work__description">
@@ -655,7 +691,7 @@
                 </div>
 
                 <div class="work__card mix web">
-                    <h4 class="work__section__title">Expedia.com</h4>
+                    <h4 class="work__section__title">Expedia.com Clone</h4>
                     <img src="./assets/img/expedia.com.png" alt="" class="work__img">
                     
 
