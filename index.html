@@ -49,7 +49,7 @@
         border: 1.2px solid #5fa7e3;
         border-radius: 11px;
         color: #5fa7e3;
-        margin-right: 35px;
+        margin-right: 25px;
         transition: color 0.3s, background-color 0.3s, border-color 0.3s, text-decoration 0.3s;
     }
 
@@ -59,23 +59,31 @@
         border-color: #5fa7e3;
         text-decoration: underline;
     }
-    @media (max-width: 600px) {
-        #gtempsize {
-            display: none;
-        }
+@media (max-width: 600px) {
+    #gtempsize {
+        display: none;
     }
+}
 
-    @media (min-width: 601px) and (max-width: 800px) {
-        #gtempsize {
-            font-size: 14px; /* Adjust font size for medium-sized screens */
-        }
+@media (min-width: 601px) and (max-width: 800px) {
+    #gtempsize {
+        font-size: 14px; /* Adjust font size for medium-sized screens */
     }
+}
 
-    @media (min-width: 801px) and (max-width: 1200px) {
-        #gtempsize {
-            font-size: 16px; /* Adjust font size for larger screens */
-        }
+@media (min-width: 801px) and (max-width: 1200px) {
+    #gtempsize {
+        font-size: 16px; /* Adjust font size for larger screens */
     }
+}
+
+/* iPad Mini */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #gtempsize {
+        font-size: 18px; /* Adjust font size for iPad Mini */
+    }
+}
+
     </style>
 </head>
 
@@ -90,7 +98,8 @@
                 <a href="#skills" class="nav__logo" id="tempsize">Skills</a>
                 <a href="#work" class="nav__logo" id="tempsize">Projects</a>
                 <a href="#contact" class="nav__logo" id="tempsize">Contact</a>
-                <a href="./Vikas_Sanodiya_Resume.pdf" class="nav__logo" id="tempsize" target="_blank">Resume</a>
+                <a href="./Vikas_Sanodiya_Resume.pdf" download class="nav__logo" id="resumeLink" target="_blank" onclick="openGoogleDrive()">Resume</a>
+
             </div>
             
             
@@ -158,10 +167,11 @@
                         <a class="button" href="#about">About me</a>
 
                         <!-- Add resume -->
+                        <a href="./Vikas_Sanodiya_Resume.pdf" download class="button button--ghost" id="resumeLink" target="_blank" onclick="openGoogleDrive()">Download Resume</a>
 
-                        <a href="./Vikas_Sanodiya_Resume.pdf" class="button button--ghost "target="_blank">
-                            Download Resume
-                        </a>
+                        <!-- <a href="./Vikas_Sanodiya_Resume.pdf" class="button button--ghost "target="_blank"> -->
+                            
+                        <!-- </a> -->
 
                         <!-- about -->
 
@@ -785,6 +795,12 @@
                     GitHubCalendar(".calendar", "vikas-011");
                     // or enable responsive functionality
                     GitHubCalendar(".calendar", "vikas-011", { responsive: true });            
+                </script>
+                <script>
+                    function openGoogleDrive() {
+                      // Open the Google Drive link in a new tab
+                      window.open('https://drive.google.com/file/d/1gZwyLV7aISVrM0eQ0QoCBWNWukVjeGOv/view?usp=sharing', '_blank');
+                    }
                 </script>
             </div>
         </section>
